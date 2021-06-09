@@ -1,17 +1,22 @@
 import 'package:flutter/material.dart';
-import 'package:sound4u/home.dart';
-import 'package:sound4u/registration.dart';
+import 'package:flutter_easyloading/flutter_easyloading.dart';
+import 'home.dart';
+import 'registration.dart';
+import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:http/http.dart' as http;
-import 'package:flutter_easyloading/flutter_easyloading.dart';
+
+import 'useratr.dart';
 
 class Login extends StatefulWidget {
+  final User userattr;
+
+  const Login({Key key, this.userattr}) : super(key: key);
   @override
-  _LoginState createState() => _LoginState();
+  _LoginScreenState createState() => _LoginScreenState();
 }
 
-class _LoginState extends State<Login> {
+class _LoginScreenState extends State<Login> {
   bool _rmbMe = false;
   TextEditingController userController = new TextEditingController();
   TextEditingController emailController = new TextEditingController();
@@ -148,8 +153,12 @@ class _LoginState extends State<Login> {
             backgroundColor: Colors.blueAccent[700],
             textColor: Colors.white,
             fontSize: 16.0);
-        Navigator.push(
-            context, MaterialPageRoute(builder: (content) => Home()));
+        User user = User(
+          email: email,
+          password: password,
+        );
+        Navigator.push(context,
+            MaterialPageRoute(builder: (content) => Home(userattr: user)));
       } else {
         EasyLoading.showError(
             'Login fail! Make sure your email and password is correct');

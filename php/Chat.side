@@ -1,0 +1,905 @@
+{
+  "id": "297aa48d-42a0-4724-816c-5d596617728b",
+  "version": "2.0",
+  "name": "Chat",
+  "url": "https://www.seagm.com/",
+  "tests": [{
+    "id": "093632e5-d49c-4b2b-b914-49831a3c8bf4",
+    "name": "Chat Invalid",
+    "commands": [{
+      "id": "8786f8d1-090e-4a69-a8ce-cc7e6d9e030c",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.seagm.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9787b5a8-a854-4c1f-b5db-0c0fba786d61",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "857x621",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a12ea8da-a307-4b34-8086-962e0ec266ce",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "6750c644-7dba-457f-8f2b-8aa10ac02656",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "css=.fake_input",
+      "targets": [
+        ["css=.fake_input", "css:finder"],
+        ["xpath=//div[7]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8f1604db-8beb-41e9-82c5-206c924cf403",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "id=___$_31__profile__name",
+      "targets": [
+        ["id=___$_31__profile__name", "id"],
+        ["css=#\\___\\$_31__profile__name", "css:finder"],
+        ["xpath=//input[@id='___$_31__profile__name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ef2bffb2-7bb4-4a9e-85a2-f4d4e42f6c1b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.meshim_widget_widgets_form_Profile",
+      "targets": [
+        ["css=.meshim_widget_widgets_form_Profile", "css:finder"],
+        ["xpath=//div[7]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "82d52819-e1ea-41eb-a675-88b1d0a4b60e",
+      "comment": "",
+      "command": "type",
+      "target": "id=___$_31__profile__name",
+      "targets": [
+        ["id=___$_31__profile__name", "id"],
+        ["css=#\\___\\$_31__profile__name", "css:finder"],
+        ["xpath=//input[@id='___$_31__profile__name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "1342133"
+    }, {
+      "id": "a06906e9-33aa-48a7-b538-6bedd6da8730",
+      "comment": "",
+      "command": "click",
+      "target": "css=.edit_external",
+      "targets": [
+        ["css=.edit_external", "css:finder"],
+        ["xpath=//div[7]/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8889e96d-69d6-4094-83b0-93c8eca4e6cf",
+      "comment": "",
+      "command": "click",
+      "target": "id=___$_31__profile__name",
+      "targets": [
+        ["id=___$_31__profile__name", "id"],
+        ["css=#\\___\\$_31__profile__name", "css:finder"],
+        ["xpath=//input[@id='___$_31__profile__name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9b0e75b2-a8a7-4dd1-942d-8555697a9765",
+      "comment": "",
+      "command": "type",
+      "target": "id=___$_31__profile__name",
+      "targets": [
+        ["id=___$_31__profile__name", "id"],
+        ["css=#\\___\\$_31__profile__name", "css:finder"],
+        ["xpath=//input[@id='___$_31__profile__name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "        "
+    }, {
+      "id": "8cbd2768-d733-40a1-9c07-d0a6061a0787",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "css=.edit_external",
+      "targets": [
+        ["css=.edit_external", "css:finder"],
+        ["xpath=//div[7]/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6e0afc13-0b9a-4941-a314-3aa11e2994cb",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "css=.meshim_widget_widgets_form_Profile",
+      "targets": [
+        ["css=.meshim_widget_widgets_form_Profile", "css:finder"],
+        ["xpath=//div[7]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bbede527-be18-4609-8fbf-02dea6bcd956",
+      "comment": "",
+      "command": "click",
+      "target": "css=.meshim_widget_widgets_form_Profile",
+      "targets": [
+        ["css=.meshim_widget_widgets_form_Profile", "css:finder"],
+        ["xpath=//div[7]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f5b4d2f8-6ba8-4f34-a7a7-9ed2d3e36d00",
+      "comment": "",
+      "command": "click",
+      "target": "id=___$_31__profile__name",
+      "targets": [
+        ["id=___$_31__profile__name", "id"],
+        ["css=#\\___\\$_31__profile__name", "css:finder"],
+        ["xpath=//input[@id='___$_31__profile__name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b75685fd-dc5c-4846-b717-c7f74345dcda",
+      "comment": "",
+      "command": "type",
+      "target": "id=___$_31__profile__name",
+      "targets": [
+        ["id=___$_31__profile__name", "id"],
+        ["css=#\\___\\$_31__profile__name", "css:finder"],
+        ["xpath=//input[@id='___$_31__profile__name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "we@hgdqygw"
+    }, {
+      "id": "10869db7-7639-45fd-8c65-9b51b6b96f61",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "css=.meshim_widget_widgets_form_Profile",
+      "targets": [
+        ["css=.meshim_widget_widgets_form_Profile", "css:finder"],
+        ["xpath=//div[7]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "43d7505e-dcc2-406f-9ed7-61c247f38346",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "css=.field_phone > .label",
+      "targets": [
+        ["css=.field_phone > .label", "css:finder"],
+        ["xpath=//div[4]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Phone number')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "585a052b-b887-4625-966e-2faa5cb5607e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.meshim_widget_widgets_form_Profile",
+      "targets": [
+        ["css=.meshim_widget_widgets_form_Profile", "css:finder"],
+        ["xpath=//div[7]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6cf1a20b-6fab-432d-8a8f-695f30061a19",
+      "comment": "",
+      "command": "click",
+      "target": "id=___$_31__profile__name",
+      "targets": [
+        ["id=___$_31__profile__name", "id"],
+        ["css=#\\___\\$_31__profile__name", "css:finder"],
+        ["xpath=//input[@id='___$_31__profile__name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4925fa83-e178-46fb-be99-ebb8fef63918",
+      "comment": "",
+      "command": "type",
+      "target": "id=___$_31__profile__name",
+      "targets": [
+        ["id=___$_31__profile__name", "id"],
+        ["css=#\\___\\$_31__profile__name", "css:finder"],
+        ["xpath=//input[@id='___$_31__profile__name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f18c862-a438-4760-95c9-6fb6aece2f12",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "id=___$_31__profile__email",
+      "targets": [
+        ["id=___$_31__profile__email", "id"],
+        ["css=#\\___\\$_31__profile__email", "css:finder"],
+        ["xpath=//input[@id='___$_31__profile__email']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c4c8f9a8-5234-428b-a7e1-a19092823003",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "css=.editing:nth-child(2)",
+      "targets": [
+        ["css=.editing:nth-child(2)", "css:finder"],
+        ["xpath=//div[7]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb6ed175-8794-49a4-8be0-4616fbb65f4c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.editing:nth-child(2)",
+      "targets": [
+        ["css=.editing:nth-child(2)", "css:finder"],
+        ["xpath=//div[7]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "73b4725c-dd99-4122-9db1-c04518267be2",
+      "comment": "",
+      "command": "type",
+      "target": "id=___$_31__profile__email",
+      "targets": [
+        ["id=___$_31__profile__email", "id"],
+        ["css=#\\___\\$_31__profile__email", "css:finder"],
+        ["xpath=//input[@id='___$_31__profile__email']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "tfdgdhkk"
+    }, {
+      "id": "342e11a8-9d95-4a2c-8068-ce95d79648c5",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "css=.edit_external",
+      "targets": [
+        ["css=.edit_external", "css:finder"],
+        ["xpath=//div[7]/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "17456089-60a2-468c-a2b1-1c553e28f8ea",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "css=.error_message:nth-child(5)",
+      "targets": [
+        ["css=.error_message:nth-child(5)", "css:finder"],
+        ["xpath=//div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1c3d1973-6012-463d-b239-4af6fd0a422e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.meshim_widget_widgets_form_Profile",
+      "targets": [
+        ["css=.meshim_widget_widgets_form_Profile", "css:finder"],
+        ["xpath=//div[7]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e348fb66-5939-4fa9-9912-e902c785dbdb",
+      "comment": "",
+      "command": "click",
+      "target": "id=___$_31__profile__email",
+      "targets": [
+        ["id=___$_31__profile__email", "id"],
+        ["css=#\\___\\$_31__profile__email", "css:finder"],
+        ["xpath=//input[@id='___$_31__profile__email']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "640acf80-ff52-40ad-baaa-e936934fb45c",
+      "comment": "",
+      "command": "type",
+      "target": "id=___$_31__profile__email",
+      "targets": [
+        ["id=___$_31__profile__email", "id"],
+        ["css=#\\___\\$_31__profile__email", "css:finder"],
+        ["xpath=//input[@id='___$_31__profile__email']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "31566"
+    }, {
+      "id": "1b49bfb2-97de-4a40-b93b-6b41f6d26c9f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.meshim_widget_widgets_form_Profile",
+      "targets": [
+        ["css=.meshim_widget_widgets_form_Profile", "css:finder"],
+        ["xpath=//div[7]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9af4f60f-b737-49ee-acae-48008a46c872",
+      "comment": "",
+      "command": "click",
+      "target": "id=___$_31__profile__email",
+      "targets": [
+        ["id=___$_31__profile__email", "id"],
+        ["css=#\\___\\$_31__profile__email", "css:finder"],
+        ["xpath=//input[@id='___$_31__profile__email']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "07c88242-41af-45d7-9e06-f4e017e555ed",
+      "comment": "",
+      "command": "type",
+      "target": "id=___$_31__profile__email",
+      "targets": [
+        ["id=___$_31__profile__email", "id"],
+        ["css=#\\___\\$_31__profile__email", "css:finder"],
+        ["xpath=//input[@id='___$_31__profile__email']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "efae7d84-df2a-48a0-add6-9057ea38cb6c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.scrollable_inner",
+      "targets": [
+        ["css=.scrollable_inner", "css:finder"],
+        ["xpath=//form/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "650f55e8-ef33-4784-922b-0b190a2672b7",
+      "comment": "",
+      "command": "click",
+      "target": "id=___$_31__profile__email",
+      "targets": [
+        ["id=___$_31__profile__email", "id"],
+        ["css=#\\___\\$_31__profile__email", "css:finder"],
+        ["xpath=//input[@id='___$_31__profile__email']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "22530703-d5dd-4937-8389-fa01cf6f2fbb",
+      "comment": "",
+      "command": "type",
+      "target": "id=___$_31__profile__email",
+      "targets": [
+        ["id=___$_31__profile__email", "id"],
+        ["css=#\\___\\$_31__profile__email", "css:finder"],
+        ["xpath=//input[@id='___$_31__profile__email']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "phitsanuk66.gmail.com"
+    }, {
+      "id": "95185b9e-d262-4753-829d-119a56a17bcc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.scrollable_inner",
+      "targets": [
+        ["css=.scrollable_inner", "css:finder"],
+        ["xpath=//form/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "797d30ff-1289-49b1-8fa0-e8143d1f12b5",
+      "comment": "",
+      "command": "click",
+      "target": "id=___$_31__profile__email",
+      "targets": [
+        ["id=___$_31__profile__email", "id"],
+        ["css=#\\___\\$_31__profile__email", "css:finder"],
+        ["xpath=//input[@id='___$_31__profile__email']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "505d5234-9325-428a-a90a-1c728d316000",
+      "comment": "",
+      "command": "type",
+      "target": "id=___$_31__profile__email",
+      "targets": [
+        ["id=___$_31__profile__email", "id"],
+        ["css=#\\___\\$_31__profile__email", "css:finder"],
+        ["xpath=//input[@id='___$_31__profile__email']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "phitsanuk66.com"
+    }, {
+      "id": "efc88ec9-c35d-45f2-88ae-7f61799fde04",
+      "comment": "",
+      "command": "click",
+      "target": "css=.error_message:nth-child(5)",
+      "targets": [
+        ["css=.error_message:nth-child(5)", "css:finder"],
+        ["xpath=//div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f81f0c76-7bd4-48ba-850a-d37ea1041960",
+      "comment": "",
+      "command": "click",
+      "target": "id=___$_31__profile__phone",
+      "targets": [
+        ["id=___$_31__profile__phone", "id"],
+        ["css=#\\___\\$_31__profile__phone", "css:finder"],
+        ["xpath=//input[@id='___$_31__profile__phone']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d0f50253-64b7-4d37-9cd2-8741e166007b",
+      "comment": "",
+      "command": "type",
+      "target": "id=___$_31__profile__phone",
+      "targets": [
+        ["id=___$_31__profile__phone", "id"],
+        ["css=#\\___\\$_31__profile__phone", "css:finder"],
+        ["xpath=//input[@id='___$_31__profile__phone']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "hduujnna"
+    }, {
+      "id": "7dacbfb6-afbf-407e-972a-662334a2410f",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "css=.scrollable_inner",
+      "targets": [
+        ["css=.scrollable_inner", "css:finder"],
+        ["xpath=//form/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "32feddfe-7db9-4860-b341-63867c0b3593",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "css=.field_phone > .error_message",
+      "targets": [
+        ["css=.field_phone > .error_message", "css:finder"],
+        ["xpath=//div[4]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5402309c-5f5d-431d-b913-d3b7f0b37bfd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.scrollable_inner",
+      "targets": [
+        ["css=.scrollable_inner", "css:finder"],
+        ["xpath=//form/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1a294a20-9d65-44fc-9754-fdbb3258bb44",
+      "comment": "",
+      "command": "click",
+      "target": "id=___$_31__profile__phone",
+      "targets": [
+        ["id=___$_31__profile__phone", "id"],
+        ["css=#\\___\\$_31__profile__phone", "css:finder"],
+        ["xpath=//input[@id='___$_31__profile__phone']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b15c58c2-1546-4fa7-8029-9b52229fbf26",
+      "comment": "",
+      "command": "type",
+      "target": "id=___$_31__profile__phone",
+      "targets": [
+        ["id=___$_31__profile__phone", "id"],
+        ["css=#\\___\\$_31__profile__phone", "css:finder"],
+        ["xpath=//input[@id='___$_31__profile__phone']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "1233456"
+    }, {
+      "id": "cc59317d-69f8-4f76-ac3b-3b41d0fe946f",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "css=.scrollable_inner",
+      "targets": [
+        ["css=.scrollable_inner", "css:finder"],
+        ["xpath=//form/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce17f55c-4860-483b-8471-d5139a1be866",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "css=.field_department > .jx_ui_Label",
+      "targets": [
+        ["css=.field_department > .jx_ui_Label", "css:finder"],
+        ["xpath=//div[8]/div/div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Choose support language *')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "72157fe0-7f7c-4bef-86a5-4b8bd2b5fc36",
+      "comment": "",
+      "command": "click",
+      "target": "css=.scrollable_inner",
+      "targets": [
+        ["css=.scrollable_inner", "css:finder"],
+        ["xpath=//form/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "85d3279b-03e0-4d25-a002-675353737e4b",
+      "comment": "",
+      "command": "click",
+      "target": "id=___$_31__profile__phone",
+      "targets": [
+        ["id=___$_31__profile__phone", "id"],
+        ["css=#\\___\\$_31__profile__phone", "css:finder"],
+        ["xpath=//input[@id='___$_31__profile__phone']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8cbabdce-3ac5-460f-b41e-493e9d7a478f",
+      "comment": "",
+      "command": "type",
+      "target": "id=___$_31__profile__phone",
+      "targets": [
+        ["id=___$_31__profile__phone", "id"],
+        ["css=#\\___\\$_31__profile__phone", "css:finder"],
+        ["xpath=//input[@id='___$_31__profile__phone']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "     "
+    }, {
+      "id": "7ff78133-2672-4b9d-b5b8-1403eba5b84f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.scrollable_inner",
+      "targets": [
+        ["css=.scrollable_inner", "css:finder"],
+        ["xpath=//form/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4f334352-2dcd-44cb-abc2-fb7aff67c117",
+      "comment": "",
+      "command": "click",
+      "target": "id=___$_31__profile__phone",
+      "targets": [
+        ["id=___$_31__profile__phone", "id"],
+        ["css=#\\___\\$_31__profile__phone", "css:finder"],
+        ["xpath=//input[@id='___$_31__profile__phone']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "42ce5850-5f61-46eb-85d5-f6b66e37adb1",
+      "comment": "",
+      "command": "type",
+      "target": "id=___$_31__profile__phone",
+      "targets": [
+        ["id=___$_31__profile__phone", "id"],
+        ["css=#\\___\\$_31__profile__phone", "css:finder"],
+        ["xpath=//input[@id='___$_31__profile__phone']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "!@$%"
+    }, {
+      "id": "bb50f168-87ef-4196-882a-f2edf003657f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.field_phone > .error_message",
+      "targets": [
+        ["css=.field_phone > .error_message", "css:finder"],
+        ["xpath=//div[4]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "48bd575d-a74e-4323-a914-bcc317f448c4",
+      "comment": "",
+      "command": "click",
+      "target": "id=___$_86",
+      "targets": [
+        ["id=___$_86", "id"],
+        ["name=message", "name"],
+        ["css=#\\___\\$_86", "css:finder"],
+        ["xpath=//textarea[@id='___$_86']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1a3e3165-af3a-4b92-8e0b-83bf842346e2",
+      "comment": "",
+      "command": "type",
+      "target": "id=___$_86",
+      "targets": [
+        ["id=___$_86", "id"],
+        ["name=message", "name"],
+        ["css=#\\___\\$_86", "css:finder"],
+        ["xpath=//textarea[@id='___$_86']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "jsdnjkadc"
+    }, {
+      "id": "ade5d3b4-8a1a-4fa5-a2c1-8deecef4b2c7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.scrollable_inner",
+      "targets": [
+        ["css=.scrollable_inner", "css:finder"],
+        ["xpath=//form/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a999f49a-f224-4e6d-8680-720f19b8226e",
+      "comment": "",
+      "command": "click",
+      "target": "id=___$_86",
+      "targets": [
+        ["id=___$_86", "id"],
+        ["name=message", "name"],
+        ["css=#\\___\\$_86", "css:finder"],
+        ["xpath=//textarea[@id='___$_86']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4ab4dfa2-2613-4d7d-9798-8de93d059a24",
+      "comment": "",
+      "command": "type",
+      "target": "id=___$_86",
+      "targets": [
+        ["id=___$_86", "id"],
+        ["name=message", "name"],
+        ["css=#\\___\\$_86", "css:finder"],
+        ["xpath=//textarea[@id='___$_86']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "12647284981"
+    }, {
+      "id": "81cad63f-b351-4230-ae61-194e8cc91af2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.scrollable_inner",
+      "targets": [
+        ["css=.scrollable_inner", "css:finder"],
+        ["xpath=//form/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "791d31af-f9a1-405b-a4c3-367e53d37b5e",
+      "comment": "",
+      "command": "click",
+      "target": "id=___$_86",
+      "targets": [
+        ["id=___$_86", "id"],
+        ["name=message", "name"],
+        ["css=#\\___\\$_86", "css:finder"],
+        ["xpath=//textarea[@id='___$_86']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3b9541bf-235f-4022-953e-4be294c56e86",
+      "comment": "",
+      "command": "type",
+      "target": "id=___$_86",
+      "targets": [
+        ["id=___$_86", "id"],
+        ["name=message", "name"],
+        ["css=#\\___\\$_86", "css:finder"],
+        ["xpath=//textarea[@id='___$_86']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "          "
+    }, {
+      "id": "0c0b75f2-447c-44fd-99a1-e81432a1dd9c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.scrollable_inner",
+      "targets": [
+        ["css=.scrollable_inner", "css:finder"],
+        ["xpath=//form/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0bfea7c8-6b78-4ef2-b0b5-c9cec2f81e67",
+      "comment": "",
+      "command": "click",
+      "target": "id=___$_86",
+      "targets": [
+        ["id=___$_86", "id"],
+        ["name=message", "name"],
+        ["css=#\\___\\$_86", "css:finder"],
+        ["xpath=//textarea[@id='___$_86']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "847dd96f-2100-4f36-8ea5-101821cecae9",
+      "comment": "",
+      "command": "type",
+      "target": "id=___$_86",
+      "targets": [
+        ["id=___$_86", "id"],
+        ["name=message", "name"],
+        ["css=#\\___\\$_86", "css:finder"],
+        ["xpath=//textarea[@id='___$_86']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "@#$%vghasd"
+    }, {
+      "id": "be9699ba-2d20-4617-931d-10a0485a76c3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.scrollable_inner",
+      "targets": [
+        ["css=.scrollable_inner", "css:finder"],
+        ["xpath=//form/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "d519ab4a-1a93-41bd-aae2-bbeea73ab9f1",
+    "name": "Chat Valid",
+    "commands": [{
+      "id": "8ba1dce6-733c-4ed1-8148-163a4cb5f25c",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.seagm.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8d7dc5fa-3f14-4f51-a794-a9c47d862d68",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "859x623",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6ba71a37-7054-41c6-80a5-150414f2fca3",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "815ffce7-7665-4f4e-b100-eb7041f81985",
+      "comment": "",
+      "command": "type",
+      "target": "id=___$_31__profile__name",
+      "targets": [
+        ["id=___$_31__profile__name", "id"],
+        ["css=#\\___\\$_31__profile__name", "css:finder"],
+        ["xpath=//input[@id='___$_31__profile__name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Phitsanuk"
+    }, {
+      "id": "116c6d6b-a3c5-4a1a-81aa-192e61921d0c",
+      "comment": "",
+      "command": "click",
+      "target": "id=___$_31__profile__email",
+      "targets": [
+        ["id=___$_31__profile__email", "id"],
+        ["css=#\\___\\$_31__profile__email", "css:finder"],
+        ["xpath=//input[@id='___$_31__profile__email']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f792aec-0e86-4edd-a47b-3d885c7ce175",
+      "comment": "",
+      "command": "type",
+      "target": "id=___$_31__profile__email",
+      "targets": [
+        ["id=___$_31__profile__email", "id"],
+        ["css=#\\___\\$_31__profile__email", "css:finder"],
+        ["xpath=//input[@id='___$_31__profile__email']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "phitsanuk66@gmail.com"
+    }, {
+      "id": "757fc839-12d3-44c8-b43f-103b1d796c08",
+      "comment": "",
+      "command": "click",
+      "target": "css=.scrollable_inner",
+      "targets": [
+        ["css=.scrollable_inner", "css:finder"],
+        ["xpath=//form/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c349f07c-8c2e-4a7a-9689-74656abd1d38",
+      "comment": "",
+      "command": "click",
+      "target": "id=___$_31__profile__phone",
+      "targets": [
+        ["id=___$_31__profile__phone", "id"],
+        ["css=#\\___\\$_31__profile__phone", "css:finder"],
+        ["xpath=//input[@id='___$_31__profile__phone']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3341f70e-0fa7-4cb1-9c06-804fd0fe4414",
+      "comment": "",
+      "command": "type",
+      "target": "id=___$_31__profile__phone",
+      "targets": [
+        ["id=___$_31__profile__phone", "id"],
+        ["css=#\\___\\$_31__profile__phone", "css:finder"],
+        ["xpath=//input[@id='___$_31__profile__phone']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "0174813547"
+    }, {
+      "id": "2210cb92-9c2c-4cec-82d3-21964bc12f73",
+      "comment": "",
+      "command": "click",
+      "target": "css=.scrollable_inner",
+      "targets": [
+        ["css=.scrollable_inner", "css:finder"],
+        ["xpath=//form/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "badbb488-d5ea-43c0-b013-d1929608d2e1",
+      "comment": "",
+      "command": "click",
+      "target": "id=___$_86",
+      "targets": [
+        ["id=___$_86", "id"],
+        ["name=message", "name"],
+        ["css=#\\___\\$_86", "css:finder"],
+        ["xpath=//textarea[@id='___$_86']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a6543749-b149-4dac-a8a0-b6442b89279a",
+      "comment": "",
+      "command": "type",
+      "target": "id=___$_86",
+      "targets": [
+        ["id=___$_86", "id"],
+        ["name=message", "name"],
+        ["css=#\\___\\$_86", "css:finder"],
+        ["xpath=//textarea[@id='___$_86']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "I'm having payment issues on 2nd of April."
+    }, {
+      "id": "27e51d1c-48a9-4a35-908b-d41dbaebd9fd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.scrollable_inner",
+      "targets": [
+        ["css=.scrollable_inner", "css:finder"],
+        ["xpath=//form/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "ff802910-07f0-4dfc-9682-475a316ea587",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.seagm.com/"],
+  "plugins": []
+}
