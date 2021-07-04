@@ -18,7 +18,6 @@ class _CalendarState extends State<Calendar> {
   String itemcenter = " ";
   String title;
   String email = "";
-  int cartitem = 0;
 
   TextEditingController _searchCtrl = new TextEditingController();
 
@@ -73,12 +72,6 @@ class _CalendarState extends State<Calendar> {
                                     itemList[index]['numspeaker']),
                                 SizedBox(height: 5),
                                 Text("DJ: " + itemList[index]['dj']),
-                                SizedBox(height: 5),
-                                Text(
-                                  "Price:" +
-                                      (double.parse(itemList[index]['price']))
-                                          .toStringAsFixed(2),
-                                ),
                                 SizedBox(height: 5),
                                 Text("Booked Date: " +
                                     itemList[index]['datebooked']),

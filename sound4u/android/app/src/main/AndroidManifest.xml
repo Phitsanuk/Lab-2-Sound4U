@@ -2,7 +2,10 @@
     package="com.stiw2044a202.sound4u">
    <application
         android:label="sound4u"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/ic_launcher"
+        android:usesCleartextTraffic="true">
+        <meta-data android:name="com.google.android.geo.API_KEY"
+               android:value="AIzaSyC0T8sv9u1HrefQqDspddP4WA09HxEFQYg"/>
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
@@ -27,6 +30,8 @@
               android:name="io.flutter.embedding.android.SplashScreenDrawable"
               android:resource="@drawable/launch_background"
               />
+
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>

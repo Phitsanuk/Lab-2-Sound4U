@@ -22,7 +22,7 @@ class _HomeState extends State<Home> {
   String itemcenter = " ";
   String title;
   String email = "";
-  int cartitem = 0;
+  String items = "";
   SharedPreferences prefs;
 
   TextEditingController _searchCtrl = new TextEditingController();
@@ -49,21 +49,17 @@ class _HomeState extends State<Home> {
           centerTitle: true,
           backgroundColor: Colors.amber[600],
           actions: [
-            TextButton.icon(
-                onPressed: () => {
-                      Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) =>
-                            Calendar(userattr: widget.userattr),
-                      ))
-                    },
-                icon: Icon(
-                  Icons.calendar_today,
-                  color: Colors.white,
-                ),
-                label: Text(
-                  cartitem.toString(),
-                  style: TextStyle(color: Colors.white),
-                )),
+            IconButton(
+              onPressed: () => {
+                Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) => Calendar(userattr: widget.userattr),
+                ))
+              },
+              icon: Icon(
+                Icons.calendar_today,
+                color: Colors.white,
+              ),
+            ),
           ],
         ),
         body: Center(
@@ -106,7 +102,7 @@ class _HomeState extends State<Home> {
                                   ),
                                 ),
                                 SizedBox(height: 10),
-                                Text(itemList[index]['size']),
+                                Text("Size: " + itemList[index]['size']),
                                 SizedBox(height: 5),
                                 Text("Number of Speakers: " +
                                     itemList[index]['numspeaker']),
@@ -114,14 +110,16 @@ class _HomeState extends State<Home> {
                                 Text("DJ: " + itemList[index]['dj']),
                                 SizedBox(height: 5),
                                 Text(
-                                  "Price:" +
+                                  "Price Per Hour: RM" +
                                       (double.parse(itemList[index]['price']))
                                           .toStringAsFixed(2),
                                 ),
                                 SizedBox(height: 10),
                                 Container(
                                     child: ElevatedButton(
-                                  onPressed: () {},
+                                  onPressed: () {
+                                    _addbooking(index);
+                                  },
                                   child: Text("Booking"),
                                 )),
                                 SizedBox(height: 10),
@@ -159,7 +157,6 @@ class _HomeState extends State<Home> {
     email = prefs.getString("email") ?? '';
     print(email);
     if (email == '') {
-      /*_loademaildialog();*/
     } else {}
   }
 
@@ -181,110 +178,50 @@ class _HomeState extends State<Home> {
     });
   }
 
-/*  _addItem(int index) async {
-    if (email == '') {
-      _loademaildialog();
-    } else {
-      await Future.delayed(Duration(seconds: 1));
-      String id = itemList[index]['id'];
-      http.post(
-          Uri.parse("http://crimsonwebs.com/s274004/sound4u/php/additem.php"),
-          body: {"email": email, "id": id}).then((response) {
-        print(response.body);
-        if (response.body == "failed") {
-          Fluttertoast.showToast(
-              msg: "Failed",
-              toastLength: Toast.LENGTH_SHORT,
-              gravity: ToastGravity.CENTER,
-              timeInSecForIosWeb: 1,
-              backgroundColor: Colors.red,
-              textColor: Colors.white,
-              fontSize: 16.0);
-        } else {
-          Fluttertoast.showToast(
-              msg: "Success",
-              toastLength: Toast.LENGTH_SHORT,
-              gravity: ToastGravity.CENTER,
-              timeInSecForIosWeb: 1,
-              backgroundColor: Colors.red,
-              textColor: Colors.white,
-              fontSize: 16.0);
-          _load();
-          Navigator.of(context).push(MaterialPageRoute(
-            builder: (context) => Booking(userattr: widget.userattr),
-          ));
-        }
-      });
-    }
-  }
+  _addbooking(int index) async {
+    String id = itemList[index]['id'];
+    String items = itemList[index]['items'];
+    String size = itemList[index]['size'];
+    String numspeaker = itemList[index]['numspeaker'];
+    String dj = itemList[index]['dj'];
 
-  void _loademaildialog() {
-    TextEditingController _emailController = new TextEditingController();
-    showDialog(
-        builder: (context) => new AlertDialog(
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(20.0))),
-                title: new Text(
-                  'Your Email',
-                  style: TextStyle(
-                    color: Colors.black,
-                  ),
-                ),
-                actions: <Widget>[
-                  SingleChildScrollView(
-                    child: Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Column(
-                        children: [
-                          TextFormField(
-                              controller: _emailController,
-                              decoration: InputDecoration(
-                                prefixIcon: Icon(
-                                  Icons.email,
-                                  color: Colors.black,
-                                ),
-                                border: OutlineInputBorder(
-                                    borderRadius:
-                                        BorderRadius.all(Radius.circular(10.0)),
-                                    borderSide:
-                                        BorderSide(color: Colors.white24)),
-                              )),
-                          ElevatedButton(
-                              onPressed: () async {
-                                String _email =
-                                    _emailController.text.toString();
-                                prefs = await SharedPreferences.getInstance();
-                                await prefs.setString("email", _email);
-                                email = _email;
-                                Fluttertoast.showToast(
-                                    msg: "Email stored",
-                                    toastLength: Toast.LENGTH_SHORT,
-                                    gravity: ToastGravity.TOP,
-                                    timeInSecForIosWeb: 1,
-                                    backgroundColor:
-                                        Color.fromRGBO(191, 30, 46, 50),
-                                    textColor: Colors.white,
-                                    fontSize: 16.0);
-                                Navigator.of(context).pop();
-                              },
-                              child: Text("Proceed"))
-                        ],
-                      ),
-                    ),
-                  ),
-                ]),
-        context: context);
-  }
+    String price = itemList[index]['price'];
 
-  void _load() {
-    print(email);
     http.post(
-        Uri.parse("http://crimsonwebs.com/s274004/sound4u/php/booked.php"),
-        body: {"email": email}).then((response) {
-      setState(() {
-        cartitem = int.parse(response.body);
-        print(cartitem);
-      });
+        Uri.parse("http://crimsonwebs.com/s274004/sound4u/php/additem.php"),
+        body: {
+          "email": email,
+          "id": id,
+          "items": items,
+          "size": size,
+          "numspeaker": numspeaker,
+          "dj": dj,
+          "price": price
+        }).then((response) {
+      print(response.body);
+      if (response.body == "failed") {
+        Fluttertoast.showToast(
+            msg: "Failed",
+            toastLength: Toast.LENGTH_SHORT,
+            gravity: ToastGravity.CENTER,
+            timeInSecForIosWeb: 1,
+            backgroundColor: Colors.red,
+            textColor: Colors.white,
+            fontSize: 16.0);
+      } else {
+        Fluttertoast.showToast(
+            msg: "Success",
+            toastLength: Toast.LENGTH_SHORT,
+            gravity: ToastGravity.CENTER,
+            timeInSecForIosWeb: 1,
+            backgroundColor: Colors.red,
+            textColor: Colors.white,
+            fontSize: 16.0);
+
+        Navigator.of(context).push(MaterialPageRoute(
+          builder: (context) => Booking(userattr: widget.userattr),
+        ));
+      }
     });
-  }*/
+  }
 }

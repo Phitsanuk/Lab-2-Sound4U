@@ -132,12 +132,12 @@ class _RegistrationState extends State<Registration> {
   }
 
   void _onRgt() {
-    String user = userController.text.toString();
+    String name = userController.text.toString();
     String email = emailController.text.toString();
     String passworda = passwordControllera.text.toString();
     String passwordb = passwordControllerb.text.toString();
 
-    if (user.isEmpty ||
+    if (name.isEmpty ||
         email.isEmpty ||
         passworda.isEmpty ||
         passwordb.isEmpty) {
@@ -160,7 +160,7 @@ class _RegistrationState extends State<Registration> {
                   child: Text("Yes"),
                   onPressed: () {
                     Navigator.of(context).pop();
-                    rgtUsers(user, email, passworda);
+                    rgtUsers(name, email, passworda);
                   }),
               TextButton(
                   child: Text("No"),
@@ -176,11 +176,11 @@ class _RegistrationState extends State<Registration> {
     Navigator.push(context, MaterialPageRoute(builder: (content) => Login()));
   }
 
-  void rgtUsers(String user, String email, String password) {
+  void rgtUsers(String name, String email, String password) {
     http.post(
         Uri.parse("http://crimsonwebs.com/s274004/sound4u/php/register.php"),
         body: {
-          "user": user,
+          "name": name,
           "email": email,
           "password": password
         }).then((response) {

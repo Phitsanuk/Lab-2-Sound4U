@@ -153,12 +153,12 @@ class _LoginScreenState extends State<Login> {
             backgroundColor: Colors.blueAccent[700],
             textColor: Colors.white,
             fontSize: 16.0);
-        User user = User(
+        User name = User(
           email: email,
           password: password,
         );
         Navigator.push(context,
-            MaterialPageRoute(builder: (content) => Home(userattr: user)));
+            MaterialPageRoute(builder: (content) => Home(userattr: name)));
       } else {
         EasyLoading.showError(
             'Login fail! Make sure your email and password is correct');

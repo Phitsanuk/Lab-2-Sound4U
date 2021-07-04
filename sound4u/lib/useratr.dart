@@ -1,14 +1,9 @@
 class User {
-  String email, password, id, items, size, numspeaker, dj, price, datebooked;
+  String name, email, password, amount;
   User({
+    this.name,
     this.email,
     this.password,
-    this.id,
-    this.items,
-    this.size,
-    this.numspeaker,
-    this.dj,
-    this.price,
-    this.datebooked,
+    this.amount,
   });
 }
